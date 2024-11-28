@@ -1,0 +1,53 @@
+body {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.sidebar {
+    width: 250px;
+    min-height: 100vh;
+    background-color: #1A1F2C !important;
+}
+
+.sidebar .nav-link {
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    margin: 0.25rem 1rem;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main-content {
+    background-color: #f8f9fa;
+    padding-bottom: 80px; /* Add padding to prevent content from being hidden behind pagination */
+}
+
+.item-card {
+    transition: transform 0.2s;
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+}
+
+.item-image {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+/* New styles for fixed pagination */
+.pagination-container {
+    position: fixed;
+    bottom: 0;
+    left: 250px; /* Width of sidebar */
+    right: 0;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-top: 1px solid #dee2e6;
+    z-index: 1000;
+}
