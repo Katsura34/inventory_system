@@ -1,5 +1,5 @@
 // Mock data for items
-const mockItems = Array.from({ length: 0 }, (_, i) => ({
+const mockItems = Array.from({ length: 10 }, (_, i) => ({
     id: i + 1,
     name: `Item Name ${i + 1}`,
     quantity: Math.floor(Math.random() * 100),
